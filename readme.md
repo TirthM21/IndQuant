@@ -2,13 +2,14 @@
 
 ### An Institutional-Grade Portfolio & Strategy Backtesting Platform for Indian Markets
 
-IndQuant Engine is a sophisticated, interactive web application built with Streamlit for backtesting and analyzing quantitative trading strategies on Indian equities and indices. It moves beyond simple backtesting to provide a full suite of institutional-grade tools, from advanced portfolio optimization methods like Hierarchical Risk Parity (HRP) to machine-learning-based regime analysis.
----
+## IndQuant Engine is a sophisticated, interactive web application built with Streamlit for backtesting and analyzing quantitative trading strategies on Indian equities and indices. It moves beyond simple backtesting to provide a full suite of institutional-grade tools, from advanced portfolio optimization methods like Hierarchical Risk Parity (HRP) to machine-learning-based regime analysis.
+
 ## ✨ Key Features
 
 This platform provides a comprehensive toolkit for both retail and professional investors to design, test, and analyze their investment ideas with mathematical rigor.
 
 #### 📈 **Core Backtesting & Performance Analysis**
+
 - **Flexible Time Periods:** Backtest over any custom date range or use presets (1Y, 5Y, 10Y, Max).
 - **Dynamic Asset Selection:** Choose from a wide, curated universe of Indian stocks and indices.
 - **Benchmark Comparison:** Continuously measure performance against a benchmark of your choice (e.g., NIFTY 50).
@@ -16,6 +17,7 @@ This platform provides a comprehensive toolkit for both retail and professional 
 - **Monthly Returns Heatmap:** Quickly identify seasonal patterns and performance consistency.
 
 #### 🎯 **Advanced Trading Strategies**
+
 - **Classic Technical Strategies:**
   - **SMA Crossover:** Simple trend-following.
   - **RSI-Based:** Mean-reversion strategy based on overbought/oversold levels.
@@ -26,6 +28,7 @@ This platform provides a comprehensive toolkit for both retail and professional 
   - **Volatility Targeting:** A sophisticated overlay that adjusts daily leverage to maintain a constant, user-defined level of portfolio risk.
 
 #### ⚖️ **Institutional-Grade Portfolio Construction**
+
 - **Multiple Weighting Schemes:**
   - **Standard:** Equal Weight, Inverse Volatility.
   - **Modern Portfolio Theory:** Minimum Variance, Maximum Sharpe Ratio.
@@ -34,6 +37,7 @@ This platform provides a comprehensive toolkit for both retail and professional 
 - **Cost Simulation:** Accurately model transaction costs and slippage to see their impact on returns.
 
 #### 🔬 **Deep Analytics & Insights**
+
 - **Comprehensive Risk Metrics:** Analyze over a dozen metrics, including **Sortino and Calmar ratios**, **VaR/CVaR**, skewness, kurtosis, beta, and alpha.
 - **Return Contribution Analysis:** A detailed breakdown with a waterfall chart showing which assets were the primary drivers of performance.
 - **Market Regime Analysis:** Uses a **Hidden Markov Model (HMM)** to automatically identify distinct market regimes (e.g., Bull, Bear, Volatile) and shows your strategy's performance in each.
@@ -41,6 +45,7 @@ This platform provides a comprehensive toolkit for both retail and professional 
 - **Stress Testing:** See how the portfolio would have performed during major historical crises like the COVID crash and demonetization.
 
 #### 📄 **Professional Reporting**
+
 - **Downloadable Data:** Export raw backtest results (daily returns, weights) to CSV.
 - **PDF Report Generation:** Generate a comprehensive, multi-page PDF report with a single click, embedding key charts and tables for sharing or record-keeping.
 
@@ -64,24 +69,29 @@ This platform provides a comprehensive toolkit for both retail and professional 
 Follow these instructions to set up and run IndQuant Engine on your local machine.
 
 ### Prerequisites
+
 - Python 3.8 or higher
 - `pip` and `venv`
 
 ### Installation & Setup
 
 1.  **Clone the repository:**
+
     ```bash
     git clone https://github.com/your-username/IndQuant-Engine.git
     cd IndQuant-Engine
     ```
 
 2.  **Create and activate a virtual environment:**
-    *On Windows:*
+    _On Windows:_
+
     ```bash
     python -m venv venv
     .\venv\Scripts\activate
     ```
-    *On macOS/Linux:*
+
+    _On macOS/Linux:_
+
     ```bash
     python3 -m venv venv
     source venv/bin/activate
@@ -89,16 +99,15 @@ Follow these instructions to set up and run IndQuant Engine on your local machin
 
 3.  **Install the required dependencies:**
     The project includes a `requirements.txt` file. Install all libraries with one command:
+
     ```bash
     pip install -r requirements.txt
     ```
-    *(Note: You will need to create this `requirements.txt` file by running `pip freeze > requirements.txt` in your activated virtual environment after installing the libraries from the code)*
 
 4.  **Run the Streamlit application:**
     ```bash
     streamlit run app.py
     ```
-    *(Rename your script file `streamlit_portfolio_backtest_india_advanced.py` to `app.py` for this command to work, or use the original filename)*
 
 Your web browser should automatically open to the application's local URL (usually `http://localhost:8501`).
 
